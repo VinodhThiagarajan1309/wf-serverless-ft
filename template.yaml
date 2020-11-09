@@ -88,7 +88,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: createItem
-      CodeUri: src/items
+      CodeUri: src/createItem
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
@@ -116,7 +116,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: getItems
-      CodeUri: src/items
+      CodeUri: src/getItems
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
@@ -144,7 +144,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: getItemByUuid
-      CodeUri: src/items
+      CodeUri: src/getItemByUuid
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
@@ -172,7 +172,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: createOrder
-      CodeUri: src/orders
+      CodeUri: src/createOrder
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
@@ -200,7 +200,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: getOrders
-      CodeUri: src/orders
+      CodeUri: src/getOrders
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
@@ -228,7 +228,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: getOrderByUuid
-      CodeUri: src/orders
+      CodeUri: src/getOrderByUuid
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
