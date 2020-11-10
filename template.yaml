@@ -259,3 +259,7 @@ Parameters:
   EnvironmentAPIGatewayStageName:
     Type: String
     Description: Environment name used for API Gateway Stage names (injected by Stackery at deployment time)
+Outputs:
+  ProdDataEndpoint:
+    Description: "API Prod stage endpoint"
+    Value: !Sub "https://${JustOrderApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentAPIGatewayStageName}/"

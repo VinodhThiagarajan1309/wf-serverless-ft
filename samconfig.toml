@@ -2,13 +2,13 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "wf-just-orders"
+stack_name = "wf-just-orders-1-0-0"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-12ky6ivps081q"
-s3_prefix = "wf-just-orders"
+s3_prefix = "wf-just-orders-1-0-0"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "StackTagName=\"dev\" EnvironmentTagName=\"dev\" EnvironmentAPIGatewayStageName=\"dev\""
+parameter_overrides = "StackTagName=\"dev\" EnvironmentTagName=\"dev\" EnvironmentAPIGatewayStageName=\"v1\""
 
 [dev]
 [dev.deploy]
