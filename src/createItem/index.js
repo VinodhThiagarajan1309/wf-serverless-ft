@@ -6,7 +6,7 @@ exports.handler =  (event, context, callback) => {
   // We need the table name
   const tableName = process.env.TABLE_NAME;
   
-  console.log("This is the event body " + JSON.parse(event.body).itemName);
+  console.log("This is the event body absolute " + JSON.parse(event.body).itemName);
 
   // We need the Dynamo API to insert
 

@@ -263,3 +263,6 @@ Outputs:
   ProdDataEndpoint:
     Description: "API Prod stage endpoint"
     Value: !Sub "https://${JustOrderApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentAPIGatewayStageName}/"
+  StageDataEndpoint:
+    Description: "API Prod stage endpoint"
+    Value: !Sub "https://${JustOrderApi}.execute-api.${AWS::Region}.amazonaws.com/Stage/"
